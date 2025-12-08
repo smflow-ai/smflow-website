@@ -65,7 +65,7 @@
                     Find "Invisible Prime" Members <span class="text-amber-500">Instantly.</span>
                 </h1>
                 <p class="text-lg text-slate-300 mb-8 leading-relaxed max-w-lg">
-                    Automate cash-flow underwriting. Approve good borrowers that FICO ignores, and detect hidden risk flags (NSF/Gambling) in seconds.
+                    Automate cash-flow underwriting using your existing data. Approve good borrowers that FICO ignores, and detect hidden risk flags in seconds.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -77,17 +77,17 @@
                     </a>
                 </div>
                 <div class="mt-6 flex items-center text-slate-400 text-sm font-medium">
-                    <i class="fas fa-shield-alt text-green-400 mr-2"></i> No Core Integration Required (Standalone .EXE)
+                    <i class="fas fa-server text-green-400 mr-2"></i> Works with Symitar, Fiserv, Jack Henry Exports
                 </div>
             </div>
 
-            <!-- Right Side: The "Live Code" Dashboard (Zero Blur) -->
+            <!-- Right Side: The "Live Code" Dashboard -->
             <div class="md:w-1/2 md:pl-4 relative z-10 mt-10 md:mt-0">
                 
                 <!-- Background Glow -->
                 <div class="absolute top-10 left-10 w-full h-full bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
 
-                <!-- THE DASHBOARD CONTAINER (Pure HTML) -->
+                <!-- THE DASHBOARD CONTAINER (Pure HTML - No Blur) -->
                 <div class="relative bg-[#f4f6f7] rounded-lg border border-slate-600 shadow-2xl overflow-hidden text-slate-800 font-sans transform transition hover:scale-[1.01] duration-500 max-w-2xl mx-auto">
                     
                     <!-- 1. HEADER (Navy Blue) -->
@@ -114,13 +114,10 @@
                         <div class="col-span-4 space-y-2">
                             <div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7]">
                                 <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">1. Configuration</span>
-                                
                                 <label class="block text-[9px] font-semibold text-slate-600 mt-1">Institution Name:</label>
                                 <input type="text" value="Credit Union" class="w-full border border-gray-400 text-[10px] px-1 py-0.5 mb-2 bg-white" readonly>
-                                
                                 <label class="block text-[9px] font-semibold text-slate-600">Data Source:</label>
                                 <div class="bg-[#2c3e50] text-white text-[10px] text-center py-1 font-bold rounded-sm mb-2 shadow-sm border border-slate-600">Select CSV File</div>
-                                
                                 <div class="space-y-1 mt-1">
                                     <div class="flex justify-between items-center"><span class="text-[9px] text-slate-500">ID</span><span class="text-[9px] bg-white border border-gray-300 px-1 w-16 text-right">Map ▼</span></div>
                                     <div class="flex justify-between items-center"><span class="text-[9px] text-slate-500">Amt</span><span class="text-[9px] bg-white border border-gray-300 px-1 w-16 text-right">Map ▼</span></div>
@@ -132,10 +129,7 @@
                         <div class="col-span-3 space-y-2">
                             <div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7] h-full">
                                 <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">2. Actions</span>
-                                
-                                <div class="bg-green-600 text-white text-[10px] font-bold text-center py-2 mb-2 border border-green-700 shadow-sm mt-1">
-                                    Run Engine
-                                </div>
+                                <div class="bg-green-600 text-white text-[10px] font-bold text-center py-2 mb-2 border border-green-700 shadow-sm mt-1">Run Engine</div>
                                 <div class="bg-blue-600 text-white text-[9px] text-center py-1 mb-1 border border-blue-700 shadow-sm">Export PDFs</div>
                                 <div class="bg-[#e0e0e0] text-slate-500 text-[9px] text-center py-1 border border-gray-300">Export CSV</div>
                             </div>
@@ -146,14 +140,13 @@
                             <div class="border border-gray-300 p-1 relative mt-2 bg-white h-full min-h-[120px]">
                                 <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">System Log</span>
                                 <div class="text-[9px] font-mono text-slate-600 p-1 leading-tight">
-                                    Loading stress_test.csv...<br>
+                                    Loading export.csv...<br>
                                     >> Cleaning Data...<br>
                                     >> Normalizing...<br>
                                     >> Aggregating Profiles...<br>
                                     >> Calculating scores...<br>
                                     <span class="text-green-600 font-bold">>> DONE. Processed 1000 rows.</span>
                                 </div>
-                                <!-- Progress Bar -->
                                 <div class="absolute bottom-2 left-2 right-2 h-1.5 bg-gray-200 rounded-full overflow-hidden">
                                     <div class="bg-green-500 w-full h-full"></div>
                                 </div>
@@ -164,12 +157,10 @@
                     <!-- 3. DATA TABLE MOCKUP -->
                     <div class="px-3 pb-3">
                         <div class="bg-white border border-gray-400 h-48 overflow-hidden relative shadow-inner">
-                            <!-- Search Bar inside table area -->
                             <div class="border-b border-gray-300 p-1 bg-gray-100 flex items-center">
                                 <span class="text-[9px] font-bold mr-2 text-slate-600">Filter ID:</span>
                                 <div class="bg-white border border-gray-300 h-4 w-32"></div>
                             </div>
-                            
                             <table class="w-full text-left border-collapse">
                                 <thead>
                                     <tr class="bg-gray-200 text-[9px] text-slate-700 font-semibold">
@@ -195,13 +186,6 @@
                                         <td class="px-2 py-1.5 border-r border-red-100 text-center text-red-600 font-bold">DETECTED</td>
                                         <td class="px-2 py-1.5 text-right">$1,873</td>
                                     </tr>
-                                    <tr class="bg-red-50 border-b border-red-100">
-                                        <td class="px-2 py-1.5 border-r border-red-100">1000003</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center font-bold text-red-600">45</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-red-600 font-bold">Manual Review</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center text-red-600 font-bold">DETECTED</td>
-                                        <td class="px-2 py-1.5 text-right">$1,712</td>
-                                    </tr>
                                     <tr class="bg-white border-b border-gray-100">
                                         <td class="px-2 py-1.5 border-r border-gray-100">1000005</td>
                                         <td class="px-2 py-1.5 border-r border-gray-100 text-center font-bold text-slate-700">70</td>
@@ -209,16 +193,8 @@
                                         <td class="px-2 py-1.5 border-r border-gray-100 text-center text-gray-300">-</td>
                                         <td class="px-2 py-1.5 text-right">$9,685</td>
                                     </tr>
-                                    <tr class="bg-red-50 border-b border-red-100">
-                                        <td class="px-2 py-1.5 border-r border-red-100">1000006</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center font-bold text-red-600">25</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-red-600 font-bold">Manual Review</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center text-red-600 font-bold">DETECTED</td>
-                                        <td class="px-2 py-1.5 text-right">$4,169</td>
-                                    </tr>
                                 </tbody>
                             </table>
-                            <!-- Gradient Fade at bottom of table to show scrollability -->
                             <div class="absolute bottom-0 w-full h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
                         </div>
                     </div>
@@ -227,124 +203,57 @@
                     <div class="bg-[#c0392b] text-white text-[9px] text-center font-bold py-1.5 uppercase tracking-wide">
                         Confidential: For Analytic Use Only. Not a Consumer Report (FCRA).
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- VALUE PROPS -->
+    <!-- WORKFLOW SECTION (The Technical Explanation) -->
     <div class="py-24 bg-white" id="how-it-works">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-[#0F172A]">Why CUs are switching to SMFlow</h2>
-                <p class="text-slate-500 mt-3 text-lg">Replace 45 minutes of manual statement review with a 3-second scan.</p>
+                <h2 class="text-3xl font-bold text-[#0F172A]">How it Works: 3 Steps to Safety</h2>
+                <p class="text-slate-500 mt-3 text-lg">Designed for data privacy. Your member data never leaves your desktop.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
-                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-bolt text-2xl"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Step 1 -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-100 transition duration-300">
+                        <i class="fas fa-database text-3xl text-slate-600 group-hover:text-amber-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Instant Speed</h3>
-                    <p class="text-slate-600 leading-relaxed">Drag and drop a CSV export from Symitar or Fiserv. Get a comprehensive PDF risk profile in under 2 seconds per member.</p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
-                    <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-search-dollar text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Risk Detection</h3>
-                    <p class="text-slate-600 leading-relaxed">Our engine scans for "First-Party Fraud" indicators: excessive NSF fees, predatory payday loans, and gambling patterns.</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
-                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-lock text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Zero IT Integration</h3>
-                    <p class="text-slate-600 leading-relaxed">Runs locally on your desktop as a secure .exe application. No cloud uploads. No firewall changes. 100% Data Privacy.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- THE PROBLEM / SOLUTION -->
-    <div class="py-24 bg-slate-900 text-white relative overflow-hidden">
-        <!-- Background decoration -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                        Don't let FICO kill good loans.
-                    </h2>
-                    <p class="text-slate-300 mb-6 text-lg leading-relaxed">
-                        Many members have a <strong>620-660 FICO</strong> but strong, stable cash flow. Traditional scoring rejects them, sending them to predatory lenders.
+                    <h3 class="text-xl font-bold text-[#0F172A] mb-3">1. Export Transaction History</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto">
+                        Generate a standard CSV export from your core system (Symitar, Fiserv, Jack Henry). <br><br>
+                        <strong>We accept any format.</strong>
                     </p>
-                    <p class="text-slate-300 mb-8 text-lg leading-relaxed">
-                        SMFlow analyzes <strong>Income Stability (CV)</strong> and <strong>Residual Cash Flow</strong> to help you verify "Ability to Repay" instantly.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="flex items-center text-slate-200 bg-slate-800 p-3 rounded-lg border border-slate-700">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i> 
-                            <span>Verify Gig Economy Income</span>
-                        </div>
-                        <div class="flex items-center text-slate-200 bg-slate-800 p-3 rounded-lg border border-slate-700">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i> 
-                            <span>Calculate True DTI</span>
-                        </div>
-                        <div class="flex items-center text-slate-200 bg-slate-800 p-3 rounded-lg border border-slate-700">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i> 
-                            <span>Audit-Ready PDF Reports</span>
-                        </div>
-                        <div class="flex items-center text-slate-200 bg-slate-800 p-3 rounded-lg border border-slate-700">
-                            <i class="fas fa-check-circle text-green-400 mr-3"></i> 
-                            <span>Detect Distress Signals</span>
-                        </div>
-                    </div>
                 </div>
-                
-                <!-- Card Visual -->
-                <div class="md:w-1/2">
-                    <div class="bg-white text-slate-800 p-8 rounded-2xl shadow-2xl border-t-4 border-amber-500">
-                        <div class="flex justify-between items-center mb-6">
-                            <h4 class="font-bold text-slate-400 text-xs uppercase tracking-wider">SMFlow Analysis Result</h4>
-                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold border border-green-200">Tier A (Approved)</span>
-                        </div>
-                        
-                        <div class="space-y-5">
-                            <div class="flex justify-between items-center border-b border-slate-100 pb-2">
-                                <span class="text-slate-500 font-medium">Member ID</span>
-                                <span class="font-mono font-bold text-slate-800">109485</span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-slate-100 pb-2">
-                                <span class="text-slate-500 font-medium">Monthly Free Cash</span>
-                                <span class="font-bold text-slate-800">$1,450.00</span>
-                            </div>
-                            <div class="flex justify-between items-center border-b border-slate-100 pb-2">
-                                <span class="text-slate-500 font-medium">Income Stability</span>
-                                <span class="text-green-600 font-bold flex items-center">
-                                    <i class="fas fa-check mr-1"></i> High (CV 0.12)
-                                </span>
-                            </div>
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-slate-600 font-medium">SMFlow Score</span>
-                                    <span class="text-2xl font-bold text-[#0F172A]">82 <span class="text-sm text-slate-400 font-normal">/ 100</span></span>
-                                </div>
-                                <div class="w-full bg-slate-200 rounded-full h-2.5 mt-2">
-                                    <div class="bg-gradient-to-r from-amber-400 to-amber-600 h-2.5 rounded-full" style="width: 82%"></div>
-                                </div>
-                            </div>
-                        </div>
+
+                <!-- Step 2 -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition duration-300">
+                        <i class="fas fa-list-check text-3xl text-slate-600 group-hover:text-blue-600"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-[#0F172A] mb-3">2. Map 4 Non-PII Fields</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto">
+                        Drag the file into SMFlow. Map just 4 columns: <br>
+                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Member ID</span> 
+                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Date</span> 
+                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Description</span> 
+                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Amount</span>.
+                        <br><br><strong>No SSN or Names required.</strong>
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-100 transition duration-300">
+                        <i class="fas fa-file-pdf text-3xl text-slate-600 group-hover:text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#0F172A] mb-3">3. Generate Profiles</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto">
+                        The engine runs locally (offline). It cleans the data, detects risk flags, and produces audit-ready PDF reports for your loan file.
+                    </p>
                 </div>
             </div>
         </div>
