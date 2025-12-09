@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMFlow.AI | Cash Flow Analytics for Credit Unions</title>
+    <title>SMFlow.AI | Intelligent Credit Analytics</title>
+    <meta name="description" content="Automated cash-flow underwriting for Credit Unions. Find invisible prime borrowers instantly.">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Custom Navy & Gold Theme */
-        :root {
-            --navy: #0F172A;
-            --gold: #F59E0B;
-        }
+        :root { --navy: #0F172A; --gold: #F59E0B; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        
-        /* Subtle Grid Pattern for Hero */
         .hero-pattern {
             background-color: #0F172A;
             background-image: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)), url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
-        
-        /* Smooth Scroll */
         html { scroll-behavior: smooth; }
     </style>
 </head>
@@ -35,11 +28,13 @@
                 <div class="flex items-center">
                     <span class="text-2xl font-bold text-[#0F172A] tracking-tight">SMFlow<span class="text-amber-500">.AI</span></span>
                 </div>
-                <div class="flex items-center space-x-6">
-                    <a href="#how-it-works" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">How it Works</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#product" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold transition">Product</a>
+                    <a href="#compliance" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold transition">Security & Compliance</a>
+                    <a href="#about" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold transition">About Us</a>
                     
-                    <!-- LinkedIn Icon -->
-                    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" class="text-slate-500 hover:text-[#0077b5] transition text-2xl">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" class="text-slate-400 hover:text-[#0077b5] transition text-2xl">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     
@@ -65,7 +60,7 @@
                     Find "Invisible Prime" Members <span class="text-amber-500">Instantly.</span>
                 </h1>
                 <p class="text-lg text-slate-300 mb-8 leading-relaxed max-w-lg">
-                    Automate cash-flow underwriting using your existing data. Approve good borrowers that FICO ignores, and detect hidden risk flags in seconds.
+                    Automate cash-flow underwriting. Approve good borrowers that FICO ignores, and detect hidden risk flags (NSF/Gambling) in seconds.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -73,44 +68,31 @@
                         <i class="fas fa-bolt mr-2"></i> Get Trial License
                     </a>
                     <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" class="bg-white/5 text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-white/10 transition text-center backdrop-blur-sm border border-white/10 flex items-center justify-center">
-                        <i class="fab fa-linkedin mr-2"></i> Connect on LinkedIn
+                        <i class="fab fa-linkedin mr-2"></i> Connect
                     </a>
                 </div>
                 <div class="mt-6 flex items-center text-slate-400 text-sm font-medium">
-                    <i class="fas fa-server text-green-400 mr-2"></i> Works with Symitar, Fiserv, Jack Henry Exports
+                    <i class="fas fa-shield-alt text-green-400 mr-2"></i> No Core Integration Required (Standalone .EXE)
                 </div>
             </div>
 
-            <!-- Right Side: The "Live Code" Dashboard -->
+            <!-- Right Image (Crisp HTML Dashboard) -->
             <div class="md:w-1/2 md:pl-4 relative z-10 mt-10 md:mt-0">
-                
-                <!-- Background Glow -->
                 <div class="absolute top-10 left-10 w-full h-full bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
-
-                <!-- THE DASHBOARD CONTAINER (Pure HTML - No Blur) -->
                 <div class="relative bg-[#f4f6f7] rounded-lg border border-slate-600 shadow-2xl overflow-hidden text-slate-800 font-sans transform transition hover:scale-[1.01] duration-500 max-w-2xl mx-auto">
-                    
-                    <!-- 1. HEADER (Navy Blue) -->
+                    <!-- HEADER -->
                     <div class="bg-[#2c3e50] p-4 flex justify-between items-center border-b border-slate-700">
                         <div class="flex items-center space-x-2">
-                            <!-- Windows traffic lights -->
-                            <div class="flex space-x-1 mr-2 opacity-50">
-                                <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
-                            </div>
+                            <div class="flex space-x-1 mr-2 opacity-50"><div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div><div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div><div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div></div>
                             <h3 class="text-white text-lg font-bold tracking-wide font-[Segoe UI]">SMFlow Analytics</h3>
                         </div>
                         <div class="text-right">
-                            <div class="text-amber-400 text-[10px] font-bold uppercase tracking-wider">TRIAL VERSION (Expires: Dec 31)</div>
+                            <div class="text-amber-400 text-[10px] font-bold uppercase tracking-wider">TRIAL VERSION</div>
                             <div class="text-slate-300 text-[10px]">23 Days Remaining</div>
                         </div>
                     </div>
-
-                    <!-- 2. MAIN CONTENT GRID -->
+                    <!-- CONTENT GRID -->
                     <div class="p-3 grid grid-cols-12 gap-3">
-                        
-                        <!-- COLUMN 1: CONFIG (Left) -->
                         <div class="col-span-4 space-y-2">
                             <div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7]">
                                 <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">1. Configuration</span>
@@ -118,166 +100,153 @@
                                 <input type="text" value="Credit Union" class="w-full border border-gray-400 text-[10px] px-1 py-0.5 mb-2 bg-white" readonly>
                                 <label class="block text-[9px] font-semibold text-slate-600">Data Source:</label>
                                 <div class="bg-[#2c3e50] text-white text-[10px] text-center py-1 font-bold rounded-sm mb-2 shadow-sm border border-slate-600">Select CSV File</div>
-                                <div class="space-y-1 mt-1">
-                                    <div class="flex justify-between items-center"><span class="text-[9px] text-slate-500">ID</span><span class="text-[9px] bg-white border border-gray-300 px-1 w-16 text-right">Map ▼</span></div>
-                                    <div class="flex justify-between items-center"><span class="text-[9px] text-slate-500">Amt</span><span class="text-[9px] bg-white border border-gray-300 px-1 w-16 text-right">Map ▼</span></div>
-                                </div>
                             </div>
                         </div>
-
-                        <!-- COLUMN 2: ACTIONS (Middle) -->
                         <div class="col-span-3 space-y-2">
                             <div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7] h-full">
                                 <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">2. Actions</span>
                                 <div class="bg-green-600 text-white text-[10px] font-bold text-center py-2 mb-2 border border-green-700 shadow-sm mt-1">Run Engine</div>
                                 <div class="bg-blue-600 text-white text-[9px] text-center py-1 mb-1 border border-blue-700 shadow-sm">Export PDFs</div>
-                                <div class="bg-[#e0e0e0] text-slate-500 text-[9px] text-center py-1 border border-gray-300">Export CSV</div>
                             </div>
                         </div>
-
-                        <!-- COLUMN 3: LOG (Right) -->
                         <div class="col-span-5">
-                            <div class="border border-gray-300 p-1 relative mt-2 bg-white h-full min-h-[120px]">
+                            <div class="border border-gray-300 p-1 relative mt-2 bg-white h-full min-h-[100px]">
                                 <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">System Log</span>
                                 <div class="text-[9px] font-mono text-slate-600 p-1 leading-tight">
-                                    Loading export.csv...<br>
-                                    >> Cleaning Data...<br>
-                                    >> Normalizing...<br>
-                                    >> Aggregating Profiles...<br>
-                                    >> Calculating scores...<br>
+                                    Loading data...<br> >> Cleaning Data...<br> >> Calculating scores...<br>
                                     <span class="text-green-600 font-bold">>> DONE. Processed 1000 rows.</span>
                                 </div>
-                                <div class="absolute bottom-2 left-2 right-2 h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="bg-green-500 w-full h-full"></div>
-                                </div>
+                                <div class="absolute bottom-2 left-2 right-2 h-1.5 bg-gray-200 rounded-full overflow-hidden"><div class="bg-green-500 w-full h-full"></div></div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- 3. DATA TABLE MOCKUP -->
+                    <!-- TABLE -->
                     <div class="px-3 pb-3">
-                        <div class="bg-white border border-gray-400 h-48 overflow-hidden relative shadow-inner">
-                            <div class="border-b border-gray-300 p-1 bg-gray-100 flex items-center">
-                                <span class="text-[9px] font-bold mr-2 text-slate-600">Filter ID:</span>
-                                <div class="bg-white border border-gray-300 h-4 w-32"></div>
-                            </div>
+                        <div class="bg-white border border-gray-400 h-40 overflow-hidden relative shadow-inner">
                             <table class="w-full text-left border-collapse">
-                                <thead>
-                                    <tr class="bg-gray-200 text-[9px] text-slate-700 font-semibold">
-                                        <th class="border-b border-r border-gray-300 px-2 py-1 w-20">ID</th>
-                                        <th class="border-b border-r border-gray-300 px-2 py-1 text-center w-12">Score</th>
-                                        <th class="border-b border-r border-gray-300 px-2 py-1">Segment</th>
-                                        <th class="border-b border-r border-gray-300 px-2 py-1 text-center w-20">Risk Flags</th>
-                                        <th class="border-b border-gray-300 px-2 py-1 text-right">Income</th>
-                                    </tr>
-                                </thead>
+                                <thead><tr class="bg-gray-200 text-[9px] text-slate-700 font-semibold"><th class="border-b border-r border-gray-300 px-2 py-1">ID</th><th class="border-b border-r border-gray-300 px-2 py-1 text-center">Score</th><th class="border-b border-r border-gray-300 px-2 py-1">Segment</th><th class="border-b border-r border-gray-300 px-2 py-1 text-center">Risk</th></tr></thead>
                                 <tbody class="text-[9px] font-mono leading-none">
-                                    <tr class="bg-white border-b border-gray-100">
-                                        <td class="px-2 py-1.5 border-r border-gray-100">1000001</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100 text-center font-bold text-slate-700">85</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100">Tier A (High)</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100 text-center text-gray-300">-</td>
-                                        <td class="px-2 py-1.5 text-right">$10,366</td>
-                                    </tr>
-                                    <tr class="bg-red-50 border-b border-red-100">
-                                        <td class="px-2 py-1.5 border-r border-red-100">1000002</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center font-bold text-red-600">25</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-red-600 font-bold">Manual Review</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center text-red-600 font-bold">DETECTED</td>
-                                        <td class="px-2 py-1.5 text-right">$1,873</td>
-                                    </tr>
-                                    <tr class="bg-white border-b border-gray-100">
-                                        <td class="px-2 py-1.5 border-r border-gray-100">1000005</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100 text-center font-bold text-slate-700">70</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100">Tier A (High)</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100 text-center text-gray-300">-</td>
-                                        <td class="px-2 py-1.5 text-right">$9,685</td>
-                                    </tr>
+                                    <tr class="bg-white border-b border-gray-100"><td class="px-2 py-1.5 border-r">1000001</td><td class="px-2 py-1.5 border-r text-center font-bold">85</td><td class="px-2 py-1.5 border-r">Tier A</td><td class="px-2 py-1.5 border-r text-center">-</td></tr>
+                                    <tr class="bg-red-50 border-b border-red-100"><td class="px-2 py-1.5 border-r">1000002</td><td class="px-2 py-1.5 border-r text-center font-bold text-red-600">25</td><td class="px-2 py-1.5 border-r text-red-600">Manual</td><td class="px-2 py-1.5 border-r text-center text-red-600 font-bold">DETECTED</td></tr>
                                 </tbody>
                             </table>
-                            <div class="absolute bottom-0 w-full h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
                         </div>
                     </div>
-
-                    <!-- 4. RED WARNING FOOTER -->
-                    <div class="bg-[#c0392b] text-white text-[9px] text-center font-bold py-1.5 uppercase tracking-wide">
-                        Confidential: For Analytic Use Only. Not a Consumer Report (FCRA).
-                    </div>
+                    <!-- FOOTER -->
+                    <div class="bg-[#c0392b] text-white text-[9px] text-center font-bold py-1.5 uppercase tracking-wide">Confidential: For Analytic Use Only. Not a Consumer Report (FCRA).</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- WORKFLOW SECTION (The Technical Explanation) _-->
-    <div class="py-24 bg-white" id="how-it-works">
+    <!-- PRODUCT SECTION -->
+    <div class="py-24 bg-white" id="product">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-[#0F172A]">How it Works: 3 Steps to Safety</h2>
-                <p class="text-slate-500 mt-3 text-lg">Designed for data privacy. Your member data never leaves your desktop.</p>
+                <h2 class="text-3xl font-bold text-[#0F172A]">Core Capabilities</h2>
+                <p class="text-slate-500 mt-3 text-lg">Designed to replace manual spreadsheet underwriting.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Step 1 -->
-                <div class="text-center group">
-                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-amber-100 transition duration-300">
-                        <i class="fas fa-database text-3xl text-slate-600 group-hover:text-amber-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-[#0F172A] mb-3">1. Export Transaction History</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto">
-                        Generate a standard CSV export from your core system (Symitar, Fiserv, Jack Henry). <br><br>
-                        <strong>We accept any format.</strong>
-                    </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700 mb-6"><i class="fas fa-bolt text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Instant Speed</h3>
+                    <p class="text-slate-600">Drag and drop a CSV export. Get comprehensive PDF risk profiles in under 2 seconds per member.</p>
                 </div>
-
-                <!-- Step 2 -->
-                <div class="text-center group">
-                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-100 transition duration-300">
-                        <i class="fas fa-list-check text-3xl text-slate-600 group-hover:text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-[#0F172A] mb-3">2. Map 4 Non-PII Fields</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto">
-                        Drag the file into SMFlow. Map just 4 columns: <br>
-                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Member ID</span> 
-                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Date</span> 
-                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Description</span> 
-                        <span class="font-mono bg-slate-100 px-1 rounded text-xs">Amount</span>.
-                        <br><br><strong>No SSN or Names required.</strong>
-                    </p>
+                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50">
+                    <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6"><i class="fas fa-search-dollar text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Distress Detection</h3>
+                    <p class="text-slate-600">Scans for "First-Party Fraud" indicators: excessive NSF fees, predatory payday loans, and gambling patterns.</p>
                 </div>
-
-                <!-- Step 3 -->
-                <div class="text-center group">
-                    <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-100 transition duration-300">
-                        <i class="fas fa-file-pdf text-3xl text-slate-600 group-hover:text-green-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-[#0F172A] mb-3">3. Generate Profiles</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto">
-                        The engine runs locally (offline). It cleans the data, detects risk flags, and produces audit-ready PDF reports for your loan file.
-                    </p>
+                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50">
+                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-6"><i class="fas fa-lock text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Zero Integration</h3>
+                    <p class="text-slate-600">Runs locally on your desktop. No cloud uploads. No firewall changes. 100% Data Privacy.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- CTA SECTION --->
-    <div class="py-24 bg-[#0F172A] text-center relative" id="contact">
+    <!-- COMPLIANCE SECTION (NEW) -->
+    <div class="py-24 bg-slate-50 border-y border-slate-200" id="compliance">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-16">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold text-[#0F172A] mb-4">Enterprise Grade Security & Compliance</h2>
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        We understand the regulatory environment Credit Unions operate in. Our architecture is built for "Zero Trust" environments.
+                    </p>
+                    <div class="mt-8">
+                        <a href="mailto:hello@smflow.ai" class="text-blue-700 font-bold hover:underline flex items-center">
+                            Request Security Whitepaper <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-server text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">Local Processing (Offline)</h4>
+                        <p class="text-slate-500 text-sm mt-2">Data never leaves your machine. The engine runs locally on your hardware. Zero data transmission risk.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-file-contract text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">FCRA Compliance</h4>
+                        <p class="text-slate-500 text-sm mt-2">SMFlow is an analytic utility for marketing segmentation. It is designed to act as a "Second Look" tool, not a CRA.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-user-shield text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">Non-PII Analysis</h4>
+                        <p class="text-slate-500 text-sm mt-2">The algorithm requires only anonymized transaction data (ID, Date, Description, Amount). No Names or SSNs needed.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-check-double text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">Audit Trail</h4>
+                        <p class="text-slate-500 text-sm mt-2">Every run generates a local CSV audit log, ensuring you have a paper trail for every decision support output.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION (NEW) -->
+    <div class="py-24 bg-white" id="about">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-[#0F172A] mb-6">Our Mission</h2>
+            <p class="text-xl text-slate-600 leading-relaxed mb-10">
+                To help Community Credit Unions compete with Megabanks by unlocking the power of <strong>Cash Flow Underwriting</strong>—without the million-dollar price tag.
+            </p>
+            <div class="bg-amber-50 p-8 rounded-2xl border border-amber-100 text-left flex flex-col md:flex-row gap-8 items-center">
+                <div class="flex-1">
+                    <h3 class="font-bold text-[#0F172A] text-lg mb-2">The "Invisible Prime" Problem</h3>
+                    <p class="text-slate-600">
+                        Millions of Americans are "Gig Economy" workers or have thin credit files. They have strong cash flow but low FICO scores. 
+                        SMFlow helps you identify these members safely, increasing loan volume while helping your community.
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <div class="bg-white p-4 rounded-full shadow-md">
+                        <i class="fas fa-hand-holding-dollar text-4xl text-amber-500"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA SECTION -->
+    <div class="py-24 bg-[#0F172A] text-center relative overflow-hidden" id="contact">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div class="max-w-3xl mx-auto px-4 relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Start your pilot today.</h2>
             <p class="text-slate-400 mb-10 text-lg">
-                Run a free 3-week "Proof of Concept" on your own data. No contracts, no IT setup, no risk.
+                Run a free 3-week "Proof of Concept" on your own data.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="mailto:hello@smflow.ai?subject=Trial%20Request" class="bg-amber-500 text-[#0F172A] font-bold text-lg px-10 py-4 rounded-lg hover:bg-amber-400 transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                <a href="mailto:hello@smflow.ai?subject=Trial%20Request" class="bg-amber-500 text-[#0F172A] font-bold text-lg px-10 py-4 rounded-lg hover:bg-amber-400 transition shadow-xl hover:shadow-2xl">
                     Request Trial License
                 </a>
                 <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" class="bg-slate-800 text-white font-bold text-lg px-10 py-4 rounded-lg hover:bg-slate-700 transition border border-slate-600 flex items-center justify-center">
                     <i class="fab fa-linkedin text-xl mr-2"></i> Contact Founder
                 </a>
             </div>
-            <p class="text-slate-600 text-xs mt-8">
-                * SMFlow.AI is an analytic utility tool. It is not a Consumer Reporting Agency (CRA) and does not provide credit reports.
-            </p>
         </div>
     </div>
 
@@ -288,10 +257,11 @@
                 <span class="text-xl font-bold text-slate-200">SMFlow<span class="text-amber-500">.AI</span></span>
             </div>
             <p class="mb-6">&copy; 2025 SMFlow.AI. All Rights Reserved.</p>
-            
             <div class="flex justify-center space-x-8">
-                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank" class="text-3xl text-slate-400 hover:text-[#0077b5] transition"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:hello@smflow.ai" class="text-3xl text-slate-400 hover:text-white transition"><i class="fas fa-envelope"></i></a>
+                <a href="#product" class="hover:text-white">Product</a>
+                <a href="#compliance" class="hover:text-white">Compliance</a>
+                <a href="#about" class="hover:text-white">About</a>
+                <a href="mailto:hello@smflow.ai" class="hover:text-white">Contact</a>
             </div>
         </div>
     </footer>
