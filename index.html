@@ -36,7 +36,7 @@
                     <span class="text-2xl font-bold text-[#0F172A] tracking-tight">SMFlow<span class="text-amber-500">.AI</span></span>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <a href="#technology" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">AI Agents</a>
+                    <a href="#roi" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">ROI</a>
                     <a href="#compliance" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">Compliance</a>
                     
                     <!-- LinkedIn Icon -->
@@ -87,21 +87,12 @@
 
             <!-- Right Side: The "Live Code" Dashboard -->
             <div class="md:w-1/2 md:pl-4 relative z-10 mt-10 md:mt-0">
-                
-                <!-- Background Glow -->
                 <div class="absolute top-10 left-10 w-full h-full bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
-
-                <!-- THE DASHBOARD CONTAINER -->
                 <div class="relative bg-[#f4f6f7] rounded-lg border border-slate-600 shadow-2xl overflow-hidden text-slate-800 font-sans transform transition hover:scale-[1.01] duration-500 max-w-2xl mx-auto">
-                    
-                    <!-- 1. HEADER (Navy Blue) -->
+                    <!-- HEADER -->
                     <div class="bg-[#2c3e50] p-4 flex justify-between items-center border-b border-slate-700">
                         <div class="flex items-center space-x-2">
-                            <div class="flex space-x-1 mr-2 opacity-50">
-                                <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
-                                <div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div>
-                            </div>
+                            <div class="flex space-x-1 mr-2 opacity-50"><div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div><div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div><div class="w-2.5 h-2.5 rounded-full bg-slate-400"></div></div>
                             <h3 class="text-white text-lg font-bold tracking-wide font-[Segoe UI]">SMFlow AI Core</h3>
                         </div>
                         <div class="text-right">
@@ -109,184 +100,84 @@
                             <div class="text-slate-300 text-[10px]">Latency: 12ms</div>
                         </div>
                     </div>
-
-                    <!-- 2. MAIN CONTENT GRID -->
+                    <!-- CONTENT -->
                     <div class="p-3 grid grid-cols-12 gap-3">
-                        <!-- COLUMN 1: CONFIG (Left) -->
-                        <div class="col-span-4 space-y-2">
-                            <div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7]">
-                                <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">1. Data Source</span>
-                                <label class="block text-[9px] font-semibold text-slate-600 mt-1">Input Stream:</label>
-                                <div class="bg-[#2c3e50] text-white text-[10px] text-center py-1 font-bold rounded-sm mb-2 shadow-sm border border-slate-600">Core_Export.csv</div>
-                                <div class="space-y-1 mt-1">
-                                    <div class="flex justify-between items-center"><span class="text-[9px] text-slate-500">Symitar</span><span class="text-[9px] bg-green-100 text-green-800 border border-green-300 px-1 w-16 text-center">Ready</span></div>
-                                    <div class="flex justify-between items-center"><span class="text-[9px] text-slate-500">Fiserv</span><span class="text-[9px] bg-green-100 text-green-800 border border-green-300 px-1 w-16 text-center">Ready</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- COLUMN 2: ACTIONS (Middle) -->
-                        <div class="col-span-3 space-y-2">
-                            <div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7] h-full">
-                                <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">2. Engine</span>
-                                <div class="bg-green-600 text-white text-[10px] font-bold text-center py-2 mb-2 border border-green-700 shadow-sm mt-1">Execute Model</div>
-                                <div class="bg-blue-600 text-white text-[9px] text-center py-1 mb-1 border border-blue-700 shadow-sm">Export Audit</div>
-                            </div>
-                        </div>
-
-                        <!-- COLUMN 3: LOG (Right - UPDATED FOR AI) -->
-                        <div class="col-span-5">
-                            <div class="border border-gray-300 p-1 relative mt-2 bg-white h-full min-h-[120px]">
-                                <span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">Live Inference Log</span>
-                                <div class="text-[9px] font-mono text-slate-600 p-1 leading-tight">
-                                    >> Ingesting data stream...<br>
-                                    >> Agent: Categorizing Transactions...<br>
-                                    >> Model: Predicting Stability...<br>
-                                    >> Risk: Automated Checks...<br>
-                                    <span class="text-green-600 font-bold">>> SUCCESS: 98% Confidence.</span>
-                                </div>
-                                <div class="absolute bottom-2 left-2 right-2 h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="bg-green-500 w-full h-full"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-span-4 space-y-2"><div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7]"><span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">1. Data Source</span><label class="block text-[9px] font-semibold text-slate-600 mt-1">Input Stream:</label><div class="bg-[#2c3e50] text-white text-[10px] text-center py-1 font-bold rounded-sm mb-2 shadow-sm border border-slate-600">Core_Export.csv</div></div></div>
+                        <div class="col-span-3 space-y-2"><div class="border border-gray-300 p-2 relative mt-2 bg-[#f4f6f7] h-full"><span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">2. Engine</span><div class="bg-green-600 text-white text-[10px] font-bold text-center py-2 mb-2 border border-green-700 shadow-sm mt-1">Execute Model</div><div class="bg-blue-600 text-white text-[9px] text-center py-1 mb-1 border border-blue-700 shadow-sm">Export Audit</div></div></div>
+                        <div class="col-span-5"><div class="border border-gray-300 p-1 relative mt-2 bg-white h-full min-h-[120px]"><span class="absolute -top-2 left-2 bg-[#f4f6f7] px-1 text-[10px] text-blue-900 font-bold">Live Inference Log</span><div class="text-[9px] font-mono text-slate-600 p-1 leading-tight">>> Ingesting data stream...<br>>> Agent: Categorizing Transactions...<br>>> Model: Predicting Stability...<br>>> Risk: Automated Checks...<br><span class="text-green-600 font-bold">>> SUCCESS: 98% Confidence.</span></div><div class="absolute bottom-2 left-2 right-2 h-1.5 bg-gray-200 rounded-full overflow-hidden"><div class="bg-green-500 w-full h-full"></div></div></div></div>
                     </div>
-
-                    <!-- 3. DATA TABLE -->
-                    <div class="px-3 pb-3">
-                        <div class="bg-white border border-gray-400 h-48 overflow-hidden relative shadow-inner">
-                            <div class="border-b border-gray-300 p-1 bg-gray-100 flex items-center">
-                                <span class="text-[9px] font-bold mr-2 text-slate-600">Filter ID:</span>
-                                <div class="bg-white border border-gray-300 h-4 w-32"></div>
-                            </div>
-                            <table class="w-full text-left border-collapse">
-                                <thead>
-                                    <tr class="bg-gray-200 text-[9px] text-slate-700 font-semibold">
-                                        <th class="border-b border-r border-gray-300 px-2 py-1 w-20">ID</th>
-                                        <th class="border-b border-r border-gray-300 px-2 py-1 text-center w-12">ML Score</th>
-                                        <th class="border-b border-r border-gray-300 px-2 py-1">Decision</th>
-                                        <th class="border-b border-r border-gray-300 px-2 py-1 text-center w-20">Flags</th>
-                                        <th class="border-b border-gray-300 px-2 py-1 text-right">Income</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-[9px] font-mono leading-none">
-                                    <tr class="bg-white border-b border-gray-100">
-                                        <td class="px-2 py-1.5 border-r border-gray-100">1000001</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100 text-center font-bold text-slate-700">85</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100">Tier A (High)</td>
-                                        <td class="px-2 py-1.5 border-r border-gray-100 text-center text-gray-300">-</td>
-                                        <td class="px-2 py-1.5 text-right">$10,366</td>
-                                    </tr>
-                                    <tr class="bg-red-50 border-b border-red-100">
-                                        <td class="px-2 py-1.5 border-r border-red-100">1000002</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center font-bold text-red-600">25</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-red-600 font-bold">Manual Review</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center text-red-600 font-bold">GAMBLING</td>
-                                        <td class="px-2 py-1.5 text-right">$1,873</td>
-                                    </tr>
-                                    <tr class="bg-red-50 border-b border-red-100">
-                                        <td class="px-2 py-1.5 border-r border-red-100">1000003</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center font-bold text-red-600">45</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-red-600 font-bold">Manual Review</td>
-                                        <td class="px-2 py-1.5 border-r border-red-100 text-center text-red-600 font-bold">STACKING</td>
-                                        <td class="px-2 py-1.5 text-right">$1,712</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="absolute bottom-0 w-full h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
-                        </div>
-                    </div>
-
-                    <!-- 4. RED WARNING FOOTER -->
-                    <div class="bg-[#c0392b] text-white text-[9px] text-center font-bold py-1.5 uppercase tracking-wide">
-                        Confidential: For Analytic Use Only. Not a Consumer Report (FCRA).
-                    </div>
+                    <!-- TABLE -->
+                    <div class="px-3 pb-3"><div class="bg-white border border-gray-400 h-48 overflow-hidden relative shadow-inner"><div class="border-b border-gray-300 p-1 bg-gray-100 flex items-center"><span class="text-[9px] font-bold mr-2 text-slate-600">Filter ID:</span><div class="bg-white border border-gray-300 h-4 w-32"></div></div><table class="w-full text-left border-collapse"><thead><tr class="bg-gray-200 text-[9px] text-slate-700 font-semibold"><th class="border-b border-r border-gray-300 px-2 py-1">ID</th><th class="border-b border-r border-gray-300 px-2 py-1 text-center">Score</th><th class="border-b border-r border-gray-300 px-2 py-1">Decision</th><th class="border-b border-r border-gray-300 px-2 py-1 text-center">Flags</th><th class="border-b border-gray-300 px-2 py-1 text-right">Income</th></tr></thead><tbody class="text-[9px] font-mono leading-none"><tr class="bg-white border-b border-gray-100"><td class="px-2 py-1.5 border-r">1000001</td><td class="px-2 py-1.5 border-r text-center font-bold">85</td><td class="px-2 py-1.5 border-r">Tier A</td><td class="px-2 py-1.5 border-r text-center">-</td><td class="px-2 py-1.5 text-right">$10,366</td></tr><tr class="bg-red-50 border-b border-red-100"><td class="px-2 py-1.5 border-r">1000002</td><td class="px-2 py-1.5 border-r text-center font-bold text-red-600">25</td><td class="px-2 py-1.5 border-r text-red-600">Manual</td><td class="px-2 py-1.5 border-r text-center text-red-600 font-bold">GAMBLING</td><td class="px-2 py-1.5 text-right">$1,873</td></tr></tbody></table></div></div>
+                    <!-- FOOTER -->
+                    <div class="bg-[#c0392b] text-white text-[9px] text-center font-bold py-1.5 uppercase tracking-wide">Confidential: For Analytic Use Only. Not a Consumer Report (FCRA).</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- TECHNOLOGY SECTION (AI AGENTS) -->
+    <!-- TECHNOLOGY SECTION -->
     <div class="py-24 bg-white" id="technology">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-[#0F172A]">AI that Regulators Can Trust</h2>
                 <p class="text-slate-500 mt-3 text-lg">We use "Glass-Box" algorithms. Every decision is transparent, explainable, and audit-ready.</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
-                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-robot text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">AI Categorization Agents</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Intelligent agents automatically read, clean, and tag messy bank data. Distinguishes between "One-Time Bonus" and "Recurring Salary" with human-like precision.
-                    </p>
-                </div>
+                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50"><div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700 mb-6"><i class="fas fa-brain text-2xl"></i></div><h3 class="text-xl font-bold mb-3 text-[#0F172A]">AI Categorization Agents</h3><p class="text-slate-600">Intelligent agents automatically read, clean, and tag messy bank data with 99% accuracy.</p></div>
+                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50"><div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6"><i class="fas fa-chart-line text-2xl"></i></div><h3 class="text-xl font-bold mb-3 text-[#0F172A]">Predictive Performance</h3><p class="text-slate-600">Our models forecast future Income Stability and Repayment Capacity, helping you approve Gig Economy workers.</p></div>
+                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50"><div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-6"><i class="fas fa-check-double text-2xl"></i></div><h3 class="text-xl font-bold mb-3 text-[#0F172A]">Smart Decisioning</h3><p class="text-slate-600">Automated guardrails detect hidden risks like "Loan Stacking" that don't appear on credit reports yet.</p></div>
+            </div>
+        </div>
+    </div>
 
-                <!-- Feature 2 -->
-                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
-                    <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-chart-line text-2xl"></i>
+    <!-- THE ROI SECTION (NEW - HIGH CONVERSION) -->
+    <div class="py-24 bg-slate-50 border-t border-slate-200" id="roi">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="inline-block bg-green-100 text-green-800 text-xs font-bold px-4 py-1 rounded-full mb-6 border border-green-200 uppercase tracking-wide">
+                The Business Case
+            </div>
+            <h2 class="text-4xl font-bold text-[#0F172A] mb-8 leading-tight">
+                "One Bad Loan."
+            </h2>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200 text-left">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <p class="text-lg text-slate-600 mb-4">
+                            The average loss on a defaulted auto loan is <span class="font-bold text-red-600">~$15,000</span>.
+                        </p>
+                        <p class="text-lg text-slate-600 mb-6">
+                            SMFlow catches the hidden risk factors—like gambling addiction and payday loan stacking—that FICO scores miss.
+                        </p>
+                        <p class="text-xl font-bold text-[#0F172A]">
+                            If SMFlow prevents just <span class="underline decoration-amber-500 decoration-4">ONE</span> default this year, the software pays for itself.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Predictive Performance</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        We don't just look at the past. Our models forecast future **Income Stability** and **Repayment Capacity**, helping you safely approve Gig Economy workers.
-                    </p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
-                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-check-double text-2xl"></i>
+                    <div class="flex-shrink-0">
+                        <div class="bg-red-50 p-6 rounded-xl border border-red-100 text-center w-64">
+                            <div class="text-sm text-slate-500 uppercase font-bold mb-2">Cost of 1 Default</div>
+                            <div class="text-4xl font-bold text-red-600 mb-2">$15,000</div>
+                            <div class="text-xs text-slate-400">Average Write-off</div>
+                            <div class="my-4 border-t border-red-200"></div>
+                            <div class="text-sm text-slate-500 uppercase font-bold mb-2">Cost of SMFlow</div>
+                            <div class="text-4xl font-bold text-green-600">$12k<span class="text-lg text-slate-400">/yr</span></div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Smart Decisioning</h3>
-                    <p class="text-slate-600 leading-relaxed">
-                        Automated guardrails detect hidden risks like "Loan Stacking" (using multiple apps to cover deficits) that don't appear on credit reports yet.
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- COMPLIANCE SECTION -->
-    <div class="py-24 bg-slate-50 border-y border-slate-200" id="compliance">
+    <div class="py-24 bg-white border-y border-slate-200" id="compliance">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col md:flex-row gap-16">
                 <div class="md:w-1/3">
                     <h2 class="text-3xl font-bold text-[#0F172A] mb-4">Enterprise Grade Security</h2>
-                    <p class="text-slate-600 text-lg leading-relaxed">
-                        Built for "Zero Trust" banking environments. We bring the AI to your data, not the other way around.
-                    </p>
-                    <div class="mt-8">
-                        <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="text-blue-700 font-bold hover:underline flex items-center">
-                            Schedule Technical Review <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
+                    <p class="text-slate-600 text-lg leading-relaxed">Built for "Zero Trust" banking environments.</p>
                 </div>
                 <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <i class="fas fa-server text-2xl text-slate-700 mb-4"></i>
-                        <h4 class="font-bold text-[#0F172A] text-lg">Local Inference (Offline)</h4>
-                        <p class="text-slate-500 text-sm mt-2">Data never leaves your machine. The ML engine runs locally on your CPU. Zero data transmission risk.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <i class="fas fa-file-contract text-2xl text-slate-700 mb-4"></i>
-                        <h4 class="font-bold text-[#0F172A] text-lg">FCRA Compliance</h4>
-                        <p class="text-slate-500 text-sm mt-2">SMFlow is an analytic utility for marketing segmentation and "Second Look" review. We are not a CRA.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <i class="fas fa-user-shield text-2xl text-slate-700 mb-4"></i>
-                        <h4 class="font-bold text-[#0F172A] text-lg">Non-PII Analysis</h4>
-                        <p class="text-slate-500 text-sm mt-2">The algorithm requires only anonymized transaction data. No Names or SSNs required for scoring.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <i class="fas fa-check-double text-2xl text-slate-700 mb-4"></i>
-                        <h4 class="font-bold text-[#0F172A] text-lg">Audit Trail</h4>
-                        <p class="text-slate-500 text-sm mt-2">Every run generates a local CSV audit log, ensuring you have a paper trail for every decision.</p>
-                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h4 class="font-bold text-[#0F172A] text-lg">Local Inference (Offline)</h4><p class="text-slate-500 text-sm mt-2">Data never leaves your machine. Zero data transmission risk.</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><h4 class="font-bold text-[#0F172A] text-lg">FCRA Compliance</h4><p class="text-slate-500 text-sm mt-2">Analytic utility for marketing segmentation and "Second Look" review.</p></div>
                 </div>
             </div>
         </div>
@@ -297,16 +188,10 @@
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div class="max-w-3xl mx-auto px-4 relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">See the AI in action.</h2>
-            <p class="text-slate-400 mb-10 text-lg">
-                Run a free 3-week "Proof of Concept" on your own data.
-            </p>
+            <p class="text-slate-400 mb-10 text-lg">Run a free 3-week "Proof of Concept" on your own data.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="bg-amber-500 text-[#0F172A] font-bold text-lg px-10 py-4 rounded-lg hover:bg-amber-400 transition shadow-xl hover:shadow-2xl">
-                    Request Trial License
-                </a>
-                <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="bg-slate-800 text-white font-bold text-lg px-10 py-4 rounded-lg hover:bg-slate-700 transition border border-slate-600 flex items-center justify-center">
-                    <i class="fab fa-linkedin text-xl mr-2"></i> Contact Founder
-                </a>
+                <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="bg-amber-500 text-[#0F172A] font-bold text-lg px-10 py-4 rounded-lg hover:bg-amber-400 transition shadow-xl hover:shadow-2xl">Request Trial License</a>
+                <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="bg-slate-800 text-white font-bold text-lg px-10 py-4 rounded-lg hover:bg-slate-700 transition border border-slate-600 flex items-center justify-center"><i class="fab fa-linkedin text-xl mr-2"></i> Contact Founder</a>
             </div>
         </div>
     </div>
@@ -314,9 +199,6 @@
     <!-- FOOTER -->
     <footer class="bg-slate-950 text-slate-500 py-10 text-sm border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="mb-4">
-                <span class="text-xl font-bold text-slate-200">SMFlow<span class="text-amber-500">.AI</span></span>
-            </div>
             <p class="mb-6">&copy; 2025 SMFlow.AI. All Rights Reserved.</p>
             <div class="flex justify-center space-x-8">
                 <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="text-3xl text-slate-400 hover:text-[#0077b5] transition"><i class="fab fa-linkedin"></i></a>
