@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMFlow.AI | Intelligent Analytic Agents for Credit Unions</title>
+    <title>SMFlow.AI | Intelligent Credit Analytics</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Icons -->
@@ -24,6 +24,9 @@
         
         /* Smooth Scroll */
         html { scroll-behavior: smooth; }
+        
+        /* Hide scrollbar when modal is open */
+        body.modal-open { overflow: hidden; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -36,8 +39,8 @@
                     <span class="text-2xl font-bold text-[#0F172A] tracking-tight">SMFlow<span class="text-amber-500">.AI</span></span>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <a href="#technology" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">AI Agents</a>
-                    <a href="#compliance" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">Compliance</a>
+                    <a href="#engine" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">The Engine</a>
+                    <a href="#compliance" class="text-slate-600 hover:text-[#0F172A] text-sm font-semibold hidden md:block">Security</a>
                     
                     <!-- LinkedIn Icon -->
                     <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="text-slate-500 hover:text-[#0077b5] transition text-2xl">
@@ -61,33 +64,36 @@
             <div class="md:w-1/2 mb-12 md:mb-0 z-10">
                 <div class="inline-flex items-center bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full mb-6 border border-amber-500/20 shadow-sm backdrop-blur-md">
                     <span class="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
-                    AI ANALYTICS FOR CREDIT UNIONS
+                    AI FOR COMMUNITY LENDING
                 </div>
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
-                    Intelligent <span class="text-amber-500">Analytic Agents</span> for Modern Lending.
+                    The <span class="text-amber-500">Intelligence Layer</span> for Modern Underwriting.
                 </h1>
                 <p class="text-lg text-slate-300 mb-8 leading-relaxed max-w-lg">
-                    Deploy <strong>Predictive Models</strong> to analyze transaction data. Identify invisible prime members and spot risk patterns instantly.
-                    <br><span class="text-sm text-slate-400">*Analytic utility only. Not a Consumer Reporting Agency.</span>
+                    A secure, desktop-native AI engine that uncovers "Invisible Prime" borrowers and detects hidden risk patterns in milliseconds.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4">
                     <!-- CALENDLY LINK -->
                     <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="bg-amber-500 text-[#0F172A] font-bold px-8 py-3.5 rounded-lg hover:bg-amber-400 transition text-center shadow-lg shadow-amber-500/20 flex items-center justify-center">
-                        <i class="fas fa-microchip mr-2"></i> See the Engine
+                        <i class="fas fa-calendar-check mr-2"></i> Schedule Demo
                     </a>
                     <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="bg-white/5 text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-white/10 transition text-center backdrop-blur-sm border border-white/10 flex items-center justify-center">
                         <i class="fab fa-linkedin mr-2"></i> Connect
                     </a>
                 </div>
                 <div class="mt-6 flex items-center text-slate-400 text-sm font-medium">
-                    <i class="fas fa-server text-green-400 mr-2"></i> Local-First AI (No Cloud Data Transfer)
+                    <i class="fas fa-server text-green-400 mr-2"></i> Local-First Inference (Zero Cloud Transfer)
                 </div>
             </div>
 
             <!-- Right Side: The "Live Code" Dashboard -->
             <div class="md:w-1/2 md:pl-4 relative z-10 mt-10 md:mt-0">
+                
+                <!-- Background Glow -->
                 <div class="absolute top-10 left-10 w-full h-full bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+
+                <!-- THE DASHBOARD CONTAINER -->
                 <div class="relative bg-[#f4f6f7] rounded-lg border border-slate-600 shadow-2xl overflow-hidden text-slate-800 font-sans transform transition hover:scale-[1.01] duration-500 max-w-2xl mx-auto">
                     <!-- HEADER -->
                     <div class="bg-[#2c3e50] p-4 flex justify-between items-center border-b border-slate-700">
@@ -115,110 +121,81 @@
         </div>
     </div>
 
-    <!-- TECHNOLOGY SECTION (AI AGENTS) -->
-    <div class="py-24 bg-white" id="technology">
+    <!-- STRATEGIC ADVANTAGE SECTION -->
+    <div class="py-24 bg-white" id="engine">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-[#0F172A]">AI that Regulators Can Trust</h2>
-                <p class="text-slate-500 mt-3 text-lg">We use "Glass-Box" algorithms. Every decision is transparent, explainable, and audit-ready.</p>
+                <h2 class="text-3xl font-bold text-[#0F172A]">The Intelligence Core</h2>
+                <p class="text-slate-500 mt-3 text-lg">We use "Glass-Box" Deterministic NLP to turn raw data into decisions.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
                     <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-700 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-robot text-2xl"></i>
+                        <i class="fas fa-brain text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">AI Categorization Agents</h3>
+                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Deterministic NLP</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        Intelligent agents automatically read, clean, and tag messy bank data. Distinguishes between "One-Time Bonus" and "Recurring Salary" with human-like precision.
+                        Context-aware categorization engines tagging thousands of transaction types (Payroll, Gig, Subprime Lenders) with <span class="font-bold text-green-600">99% accuracy</span>.
                     </p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
                     <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-chart-line text-2xl"></i>
+                        <i class="fas fa-chart-area text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Predictive Performance</h3>
+                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Predictive Modeling</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        We don't just look at the past. Our models forecast future **Income Stability** and **Repayment Capacity**, helping you safely approve Gig Economy workers.
+                        We don't just calculate totals. We model <strong>Income Volatility</strong> and <strong>Repayment Capacity</strong> to find stable borrowers others miss.
                     </p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div class="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 bg-slate-50/50 group">
                     <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-check-double text-2xl"></i>
+                        <i class="fas fa-eye text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Smart Decisioning</h3>
+                    <h3 class="text-xl font-bold mb-3 text-[#0F172A]">Anomaly Detection</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        Automated guardrails detect hidden risks like "Loan Stacking" (using multiple apps to cover deficits) that don't appear on credit reports yet.
+                        Instantly identifies complex risk behaviors like "Loan Stacking" (using multiple predatory apps) that traditional credit reports often delay.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- THE ROI SECTION (PRICE HIDDEN) -->
-    <div class="py-24 bg-slate-50 border-t border-slate-200" id="roi">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="inline-block bg-green-100 text-green-800 text-xs font-bold px-4 py-1 rounded-full mb-6 border border-green-200 uppercase tracking-wide">
-                The Business Case
-            </div>
-            <h2 class="text-4xl font-bold text-[#0F172A] mb-8 leading-tight">
-                "One Bad Loan."
-            </h2>
-            <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200 text-left">
-                <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="flex-1">
-                        <p class="text-lg text-slate-600 mb-4">
-                            The average loss on a defaulted auto loan is <span class="font-bold text-red-600">~$15,000</span>.
-                        </p>
-                        <p class="text-lg text-slate-600 mb-6">
-                            SMFlow catches the hidden risk factors—like gambling addiction and payday loan stacking—that FICO scores miss.
-                        </p>
-                        <p class="text-xl font-bold text-[#0F172A]">
-                            If SMFlow prevents just <span class="underline decoration-amber-500 decoration-4">ONE</span> default this year, the software pays for itself.
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <div class="bg-red-50 p-6 rounded-xl border border-red-100 text-center w-64">
-                            <div class="text-sm text-slate-500 uppercase font-bold mb-2">Cost of 1 Default</div>
-                            <div class="text-4xl font-bold text-red-600 mb-2">$15,000</div>
-                            <div class="text-xs text-slate-400">Average Write-off</div>
-                            <div class="my-4 border-t border-red-200"></div>
-                            <div class="text-sm text-slate-500 uppercase font-bold mb-2">ROI of SMFlow</div>
-                            <div class="text-3xl font-bold text-green-600">Positive</div>
-                            <div class="text-xs text-slate-400">From Day 1</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- COMPLIANCE SECTION -->
-    <div class="py-24 bg-white border-y border-slate-200" id="compliance">
+    <div class="py-24 bg-slate-50 border-y border-slate-200" id="compliance">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col md:flex-row gap-16">
                 <div class="md:w-1/3">
                     <h2 class="text-3xl font-bold text-[#0F172A] mb-4">Enterprise Grade Security</h2>
-                    <p class="text-slate-600 text-lg leading-relaxed">Built for "Zero Trust" banking environments.</p>
-                    <div class="mt-8">
-                        <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="text-blue-700 font-bold hover:underline flex items-center">
-                            Request Security Whitepaper <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        Built for "Zero Trust" banking environments. We bring the AI to your data, not the other way around.
+                    </p>
                 </div>
                 <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-server text-2xl text-slate-700 mb-4"></i>
                         <h4 class="font-bold text-[#0F172A] text-lg">Local Inference (Offline)</h4>
                         <p class="text-slate-500 text-sm mt-2">Data never leaves your machine. The ML engine runs locally on your CPU. Zero data transmission risk.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                        <h4 class="font-bold text-[#0F172A] text-lg">Non-CRA Designation</h4>
-                        <p class="text-slate-500 text-sm mt-2">SMFlow.AI is an analytic utility tool. We do not provide consumer reports, credit scores, or lending decisions. All final credit decisions remain with the lender.</p>
+                        <i class="fas fa-file-contract text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">FCRA Compliance</h4>
+                        <p class="text-slate-500 text-sm mt-2">SMFlow is an analytic utility for marketing segmentation and "Second Look" review. We are not a CRA.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-user-shield text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">Non-PII Analysis</h4>
+                        <p class="text-slate-500 text-sm mt-2">The algorithm requires only anonymized transaction data. No Names or SSNs required for scoring.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <i class="fas fa-check-double text-2xl text-slate-700 mb-4"></i>
+                        <h4 class="font-bold text-[#0F172A] text-lg">Audit Trail</h4>
+                        <p class="text-slate-500 text-sm mt-2">Every run generates a local CSV audit log, ensuring you have a paper trail for every decision.</p>
                     </div>
                 </div>
             </div>
@@ -229,41 +206,163 @@
     <div class="py-24 bg-[#0F172A] text-center relative overflow-hidden" id="contact">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div class="max-w-3xl mx-auto px-4 relative z-10">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">See the AI in action.</h2>
-            <p class="text-slate-400 mb-10 text-lg">Run a free 3-week "Proof of Concept" on your own data.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Experience the AI Advantage.</h2>
+            <p class="text-slate-400 mb-10 text-lg">
+                Run a free 3-week "Proof of Concept" on your own data.
+            </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="bg-amber-500 text-[#0F172A] font-bold text-lg px-10 py-4 rounded-lg hover:bg-amber-400 transition shadow-xl hover:shadow-2xl">Request Trial License</a>
-                <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="bg-slate-800 text-white font-bold text-lg px-10 py-4 rounded-lg hover:bg-slate-700 transition border border-slate-600 flex items-center justify-center"><i class="fab fa-linkedin text-xl mr-2"></i> Contact Founder</a>
+                <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="bg-amber-500 text-[#0F172A] font-bold text-lg px-10 py-4 rounded-lg hover:bg-amber-400 transition shadow-xl hover:shadow-2xl">
+                    Request Trial License
+                </a>
+                <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="bg-slate-800 text-white font-bold text-lg px-10 py-4 rounded-lg hover:bg-slate-700 transition border border-slate-600 flex items-center justify-center">
+                    <i class="fab fa-linkedin text-xl mr-2"></i> Contact Founder
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- FOOTER (LEGAL & COMPLIANCE LINKS) -->
+    <!-- FOOTER -->
     <footer class="bg-slate-950 text-slate-500 py-10 text-sm border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="mb-4">
                 <span class="text-xl font-bold text-slate-200">SMFlow<span class="text-amber-500">.AI</span></span>
             </div>
             <p class="mb-6">&copy; 2025 SMFlow.AI. All Rights Reserved.</p>
-            <div class="flex justify-center space-x-8 text-xs mb-8">
-                <a href="#compliance" class="hover:text-white">Legal Disclaimer</a>
-                <a href="#compliance" class="hover:text-white">Privacy Policy</a>
-                <a href="#compliance" class="hover:text-white">Security Whitepaper</a>
+            
+            <div class="flex justify-center space-x-6 text-xs mb-8">
+                <a href="#" onclick="openPrivacyModal(); return false;" class="hover:text-white">Privacy Policy</a>
+                <a href="#" onclick="openPrivacyModal(); return false;" class="hover:text-white">Legal Disclaimer</a>
             </div>
             
             <!-- FCRA DISCLAIMER BLOCK -->
-            <div class="max-w-2xl mx-auto border-t border-slate-800 pt-6">
+            <div class="max-w-2xl mx-auto border-t border-slate-800 pt-6 mb-8">
                 <p class="text-[10px] text-slate-600 leading-relaxed">
                     <strong>LEGAL DISCLAIMER:</strong> SMFlow.AI is a software provider of data analytics tools. We are not a Consumer Reporting Agency (CRA) as defined by the Fair Credit Reporting Act (FCRA). Our software does not provide "consumer reports" or make credit decisions. The insights generated by SMFlow are for informational and marketing segmentation purposes only and should not be used as the sole basis for adverse action (denial of credit, employment, or insurance). Users of the software are solely responsible for ensuring their lending practices comply with all applicable federal and state laws, including ECOA and FCRA.
                 </p>
             </div>
-
-            <div class="flex justify-center space-x-8 mt-8">
-                <a href="https://www.linkedin.com/in/mark-sachs" target="_blank" class="text-3xl text-slate-400 hover:text-[#0077b5] transition"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:hello@smflow.ai" class="text-3xl text-slate-400 hover:text-white transition"><i class="fas fa-envelope"></i></a>
-            </div>
         </div>
     </footer>
+    
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-slate-900 text-white p-4 z-50 border-t border-slate-700 hidden shadow-[0_-5px_20px_rgba(0,0,0,0.3)]">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-sm text-slate-300">
+                <i class="fas fa-cookie-bite text-amber-500 mr-2"></i>
+                We use cookies to ensure you get the best experience on our website. 
+                <a href="#" onclick="openPrivacyModal()" class="text-amber-500 hover:underline ml-1">Learn more</a>
+            </div>
+            <button onclick="acceptCookies()" class="bg-amber-500 text-slate-900 px-6 py-2 rounded-lg text-sm font-bold hover:bg-amber-400 transition shadow-lg">
+                Accept
+            </button>
+        </div>
+    </div>
+
+    <!-- PRIVACY POLICY MODAL -->
+    <div id="privacy-modal" class="fixed inset-0 bg-black/80 z-[60] hidden flex items-center justify-center backdrop-blur-sm p-4">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-3xl max-h-[80vh] overflow-y-auto">
+            <!-- Modal Header -->
+            <div class="bg-slate-900 p-6 flex justify-between items-center sticky top-0">
+                <h3 class="text-xl font-bold text-white">Privacy Policy & Data Usage</h3>
+                <button onclick="closePrivacyModal()" class="text-slate-400 hover:text-white text-2xl transition">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-8 space-y-6 text-slate-600">
+                
+                <div>
+                    <h4 class="text-lg font-bold text-[#0F172A] mb-2">1. Data Minimization (What we need)</h4>
+                    <p class="text-sm mb-4">SMFlow is designed to operate on <strong>Anonymized, Non-PII (Personally Identifiable Information)</strong> data only. To generate a risk score, the software requires only 4 fields:</p>
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg overflow-hidden">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-slate-100 text-slate-700 font-bold">
+                                <tr>
+                                    <th class="px-4 py-2">Required Field</th>
+                                    <th class="px-4 py-2">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr><td class="px-4 py-2 font-mono text-[#0F172A]">Member ID</td><td class="px-4 py-2">Internal alphanumeric ID (e.g., 10045). No Names.</td></tr>
+                                <tr><td class="px-4 py-2 font-mono text-[#0F172A]">Date</td><td class="px-4 py-2">Transaction posting date.</td></tr>
+                                <tr><td class="px-4 py-2 font-mono text-[#0F172A]">Description</td><td class="px-4 py-2">Merchant string (e.g., "WALMART POS").</td></tr>
+                                <tr><td class="px-4 py-2 font-mono text-[#0F172A]">Amount</td><td class="px-4 py-2">Transaction value.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-[#0F172A] mb-2">2. What We Do NOT Collect</h4>
+                    <p class="text-sm">We strictly advise clients <strong>NOT</strong> to input:</p>
+                    <ul class="list-disc list-inside text-sm mt-2 space-y-1 text-red-600 font-medium">
+                        <li>Real Customer Names</li>
+                        <li>Social Security Numbers (SSN)</li>
+                        <li>Physical Addresses</li>
+                        <li>Date of Birth</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-[#0F172A] mb-2">3. Local Processing Guarantee</h4>
+                    <p class="text-sm">
+                        The SMFlow Desktop Application is an <strong>Offline Utility</strong>. 
+                        It processes data strictly within the Random Access Memory (RAM) of the local machine. 
+                        No transaction data is ever transmitted to SMFlow servers, third-party clouds, or external databases.
+                        Once the application is closed, the session data is cleared from memory.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mt-4">
+                    <p class="text-xs text-blue-800">
+                        <strong>Compliance Note:</strong> This policy is intended to help Credit Unions maintain compliance with NCUA and GLBA data privacy standards while using third-party analytic tools.
+                    </p>
+                </div>
+
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="bg-gray-50 p-6 border-t border-gray-200 text-right">
+                <button onclick="closePrivacyModal()" class="bg-[#0F172A] text-white px-6 py-2 rounded-lg font-bold hover:bg-slate-800 transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Cookie Logic
+        function acceptCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+        
+        // Show banner if not accepted
+        document.addEventListener("DOMContentLoaded", function() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookie-banner').classList.remove('hidden');
+            }
+        });
+
+        // Modal Logic
+        function openPrivacyModal() {
+            document.getElementById('privacy-modal').classList.remove('hidden');
+            document.body.classList.add('modal-open');
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacy-modal').classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+
+        // Close modal on outside click
+        document.getElementById('privacy-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePrivacyModal();
+            }
+        });
+    </script>
 
 </body>
 </html>
